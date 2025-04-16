@@ -7,6 +7,6 @@
 <li> Calculated engagement rates by content category and individual YouTubers</li>
 <li> Created pie charts, scatter plots, and performance comparisons</li>
 <li> Business-focused insights for marketing strategy and creator partnerships
-</li>/ul>
+</li></ul>
 --
 </h5>
