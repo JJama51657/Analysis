@@ -4,7 +4,7 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.float_format', '{:.0f}'.format)
 # Read and clean up CSV
 # Removes NA values
-Ytlist = pd.read_csv(r"C:\Users\jjama\Downloads\Youtuber.csv").dropna()
+Ytlist = pd.read_csv(r"Youtuber.csv").dropna()
 Ytlist.drop(columns="Content Type", inplace=True)
 
 
