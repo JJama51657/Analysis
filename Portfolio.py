@@ -57,15 +57,27 @@ rct.sort_values("Total Interactions", inplace=True, ascending=False)
 rct.reset_index(inplace=True)
 print(rct)
 #####################################################################################################
-fig, ax = pt.subplots(figsize=(14, 9))  # Set figure size here
-
-ax.bar(rct["Country"], rct["Total Interactions"])
-ax.set_title("Engagement Per Country")
-ax.set_ylabel("Total Engagement Activity")
-ax.tick_params(axis='x', rotation=-30)
-
+pt.figure(figsize=(11, 8))
+pt.title("Cumulative YouTube Engagement per Country", fontweight="bold")
+pt.suptitle("Highlighting how audience engagement varies across countries based on total interactions with YouTubers from each region.")
+pt.bar(rct["Country"], rct["Total Interactions"])
 # Hide the 1e9 offset
-ax.get_yaxis().get_offset_text().set_visible(False)
-
+pt.ylabel("Engagement Rate (%)")
+pt.xticks(rotation=-60)
+pt.tight_layout()
+pt.show()
+pt.figure(figsize=(16, 6))
+pt.title("Engagement Rate (%) for Each Category", fontweight="bold")
+pt.pie(Final_Cat_table["Engagement Activity"],
+       labels=Final_Cat_table["Category"], autopct='%1.1f%%')
+pt.suptitle("Identifying the most investable content categories based on audience engagement, helping businesses target the best opportunities for collaboration.")
+pt.tight_layout()
+pt.show()
+pt.figure(figsize=(16, 6))
+pt.scatter(Final_CSET["Engagement Activity"], Final_CSET["Channel Name"])
+pt.plot(Final_CSET["Engagement Activity"], Final_CSET["Channel Name"])
+pt.title("Comparative Engagement Rates Across YouTubers (%)", fontweight="bold")
+pt.suptitle("Identifying the most investable YouTubers based on engagement levels, enabling businesses to focus on creators who drive the highest audience interaction.")
+pt.ylabel("Engagement Rate (%) for Each Youtuber")
 pt.tight_layout()
 pt.show()
