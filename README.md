@@ -6,8 +6,7 @@
 <li> Identifies high-engagement content categories to guide smarter ad placements and sponsorship decisions</li>
 <li> Reveals top-performing countries by total interactions to prioritize regional marketing strategies</li>
 <li> Highlights individual YouTubers with strong engagement, helping brands choose the most impactful collaborators</li>
-<li> Provides data-driven insights to maximize ROI on influencer marketing campaigns
-</li>
+<li> Provides data-driven insights to maximize ROI on influencer marketing campaigns</li>
 <li> Standardized 'K' and 'M' shorthand to full numeric values (1,000 and 1,000,000) during data wrangling to enable accurate visualization and calculation of engagement metrics.</li></ul>
 --
 </h5>
