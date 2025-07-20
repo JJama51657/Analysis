@@ -63,6 +63,4 @@ Analyzed large-scale YouTube influencer data to extract marketing insights, opti
 ```bash
 git clone https://github.com/JJama51657/youtube-influencer-analysis.git
 cd youtube-influencer-analysis
-'''pip install -r requirements.txt
-jupyter notebook
-'''
+
